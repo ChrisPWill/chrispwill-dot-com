@@ -1,14 +1,14 @@
 import * as React from "react";
 import tw from "twin.macro";
+import { Link, Outlet } from "react-router-dom";
 
 const Title = tw.div`text-3xl font-bold`;
-const SubTitle = tw.div`text-2xl`;
 
 export function App() {
   return (
     <>
-      <Title>Chris Williams</Title>
-      <SubTitle>A software engineer's site</SubTitle>
+      <Title><Link to="/">Chris Williams</Link></Title>
+      <Outlet />
     </>
   );
 }
