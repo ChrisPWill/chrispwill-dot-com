@@ -5,6 +5,7 @@
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
     "start": "parcel",
+    "start:watch": "watch \"yarn start\" src",
     "build": "parcel build",
     "cleanup": "rimraf .parcel-cache dist"
   },
