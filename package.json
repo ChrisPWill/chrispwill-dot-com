@@ -1,6 +1,8 @@
 {
   "name": "chrispwill-dot-com",
   "version": "1.0.0",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
+    "parcel": "^2.7.0"
   }
 }
