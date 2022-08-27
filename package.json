@@ -4,15 +4,28 @@
   "source": "src/index.html",
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
-    "start": "parcel",
-    "start:watch": "watch \"yarn start\" src",
     "build": "parcel build",
-    "cleanup": "rimraf .parcel-cache dist"
+    "check": "tsc --noEdmit && yarn lint",
+    "cleanup": "rimraf .parcel-cache dist",
+    "lint": "eslint",
+    "lint:fix": "eslint --fix",
+    "prettier": "prettier --write src",
+    "start": "parcel",
+    "start:watch": "watch \"yarn start\" src"
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "eslint": "^8.0.1",
+    "eslint-config-standard-with-typescript": "^22.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^15.0.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-react": "^7.31.1",
     "parcel": "^2.7.0",
     "postcss": "^8.4.16",
+    "prettier": "^2.7.1",
     "rimraf": "^3.0.2",
-    "tailwindcss": "^3.1.8"
+    "tailwindcss": "^3.1.8",
+    "typescript": "*"
   }
 }

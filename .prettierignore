@@ -1,0 +1,6 @@
+.ddidea
+*.iws
+*.iml
+node_modules
+dist
+.parcel-cache
