@@ -5,34 +5,44 @@ import { Link } from "react-router-dom";
 import { NavLink } from "./link-styles";
 
 const Container = tw.div`
-  md:container
-  md:mx-auto
   grid
-  grid-flow-col
-  justify-items-center
+  grid-flow-row
+  place-items-center
   my-3
+  sm:mx-auto
+  sm:w-32
+  md:w-64
+  lg:w-96
 `;
 
 const Title = tw.div`
-  text-2xl
+  text-center
+  text-xl
+  sm:text-2xl
   md:text-3xl
+  lg:text-4xl
   font-bold
-  my-auto
-  ml-1
   row-start-3
-  md:row-start-1
-  col-start-1
-  md:col-start-2
-  md:col-span-2
+  sm:row-start-2
+`;
+
+const SubTitle = tw.div`
+  text-center
+  text-base
+  sm:text-lg
+  md:text-xl
+  lg:text-2xl
+  row-start-4
+  sm:row-start-3
 `;
 
 const Nav = tw.div`
+  flex
+  text-center
+  sm:block
   my-2
   row-start-1
-  md:row-start-2
-  col-start-1
-  md:col-start-2
-  md:col-span-2
+  sm:row-start-4
 `;
 
 const ImgPlaceholder = tw.div`
@@ -41,13 +51,11 @@ const ImgPlaceholder = tw.div`
   rounded-full
   w-20
   h-20
-  place-self-center
-  md:col-span-1
-  md:row-span-2
+  lg:w-24
+  lg:h-24
+  sm:row-span-1
   row-start-2
-  md:row-start-1
-  col-start-1
-  md:col-start-1
+  sm:row-start-1
 `;
 
 export function TopBar() {
@@ -57,6 +65,7 @@ export function TopBar() {
       <Title>
         <Link to="/">Chris Williams</Link>
       </Title>
+      <SubTitle>Full Stack Developer</SubTitle>
       <Nav>
         <Link to="/">
           <NavLink>Home</NavLink>

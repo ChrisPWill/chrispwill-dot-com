@@ -9,10 +9,12 @@ const Container = tw.div`
 
 const Section = tw.div`
   mb-5
+  lg:text-2xl
 `;
 
 const Heading = tw.div`
   text-xl
+  lg:text-3xl
   font-bold
 `;
 
