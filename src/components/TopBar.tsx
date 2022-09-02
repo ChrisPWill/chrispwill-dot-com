@@ -2,7 +2,7 @@ import * as React from "react";
 import tw from "twin.macro";
 import { Link } from "react-router-dom";
 
-import { NavLink } from "./link-styles";
+import { Link as LinkStyle } from "./link-styles";
 
 const Container = tw.div`
   grid
@@ -68,10 +68,10 @@ export function TopBar() {
       <SubTitle>Full Stack Developer</SubTitle>
       <Nav>
         <Link to="/">
-          <NavLink>Home</NavLink>
+          <LinkStyle>Home</LinkStyle>
         </Link>
         <Link to="resume">
-          <NavLink>Resume</NavLink>
+          <LinkStyle>Resume</LinkStyle>
         </Link>
       </Nav>
     </Container>

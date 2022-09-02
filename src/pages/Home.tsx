@@ -1,6 +1,8 @@
 import * as React from "react";
 import tw from "twin.macro";
 
+import { Link as LinkStyle } from "../components/link-styles";
+
 const Container = tw.div`
   px-3
   mx-auto
@@ -33,6 +35,8 @@ export function Home() {
       </Section>
       <Section>
         <Heading>External Links</Heading>
+        <LinkStyle><a target="_blank" href="https://github.com/ChrisPWill">Github</a></LinkStyle>
+        <LinkStyle><a target="_blank" href="https://www.linkedin.com/in/chrispwill">LinkedIn</a></LinkStyle>
       </Section>
     </Container>
   );
