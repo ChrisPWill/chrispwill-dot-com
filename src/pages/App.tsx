@@ -15,12 +15,10 @@ const Container = tw.div`
 const TopBarWrapper = tw.div`
   md:h-screen
   col-span-full
-  md:col-span-3
   md:col-start-1
+  md:col-span-1
   md:row-start-1
   row-start-1
-  md:w-64
-  lg:w-96
   bg-gradient-to-tl
   from-blue-500
   to-green-200
@@ -30,15 +28,18 @@ const TopBarWrapper = tw.div`
 `;
 
 const OutletWrapper = tw.div`
+  ml-0
   md:h-screen
+  px-3
   py-4
   md:py-8
   md:px-8
   col-span-full
   row-start-2
-  md:col-span-4
-  md:col-start-4
+  md:col-span-5
+  md:col-start-2
   md:row-start-1
+  place-self-start
 `;
 
 export function App() {

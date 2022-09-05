@@ -1,12 +1,13 @@
 import * as React from "react";
-import tw from "twin.macro";
-
-const SubTitle = tw.div`text-2xl`;
+import { Content, Heading, Section } from "../../components/text";
 
 export function Resume() {
   return (
     <>
-      <SubTitle>A software engineer's resume</SubTitle>
+      <Section>
+        <Heading>Profile</Heading>
+        <Content>Test</Content>
+      </Section>
     </>
   );
 }
