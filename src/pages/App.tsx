@@ -5,32 +5,40 @@ import tw from "twin.macro";
 import { TopBar } from "../components/TopBar";
 
 const Container = tw.div`
-  sm:container
-  sm:mx-auto
+  md:container
+  md:mx-auto
   grid
   grid-flow-row
   items-center
-  my-3
 `;
 
 const TopBarWrapper = tw.div`
+  md:h-screen
   col-span-full
-  sm:col-span-3
-  sm:col-start-1
-  sm:row-start-1
+  md:col-span-3
+  md:col-start-1
+  md:row-start-1
   row-start-1
-  sm:mx-auto
-  sm:w-32
   md:w-64
   lg:w-96
+  bg-gradient-to-tl
+  from-blue-500
+  to-green-200
+  md:bg-gradient-to-b
+  md:from-blue-500
+  md:to-green-200
 `;
 
 const OutletWrapper = tw.div`
+  md:h-screen
+  py-4
+  md:py-8
+  md:px-8
   col-span-full
   row-start-2
-  sm:col-span-4
-  sm:col-start-4
-  sm:row-start-1
+  md:col-span-4
+  md:col-start-4
+  md:row-start-1
 `;
 
 export function App() {
