@@ -11,13 +11,17 @@ const Container = tw.div`
 
 const Section = tw.div`
   mb-5
-  lg:text-2xl
 `;
 
 const Heading = tw.div`
   text-xl
-  lg:text-3xl
   font-bold
+  border-l-8
+  border-blue-400
+  text-blue-400
+  px-2
+  pt-0
+  pb-1
 `;
 
 const Content = tw.div`
@@ -35,8 +39,8 @@ export function Home() {
       </Section>
       <Section>
         <Heading>External Links</Heading>
-        <LinkStyle><a target="_blank" href="https://github.com/ChrisPWill">Github</a></LinkStyle>
-        <LinkStyle><a target="_blank" href="https://www.linkedin.com/in/chrispwill">LinkedIn</a></LinkStyle>
+        <LinkStyle tw="underline"><a target="_blank" href="https://github.com/ChrisPWill">Github</a></LinkStyle>
+        <LinkStyle tw="underline"><a target="_blank" href="https://www.linkedin.com/in/chrispwill">LinkedIn</a></LinkStyle>
       </Section>
     </Container>
   );
