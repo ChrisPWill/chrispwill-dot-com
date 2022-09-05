@@ -1,7 +1,7 @@
 import * as React from "react";
 
 import { Link as LinkStyle } from "../components/link-styles";
-import { Content, Heading, Section } from "../components/text";
+import { Content, Heading, Section, SectionDivider } from "../components/text";
 
 export function Home() {
   return (
@@ -13,6 +13,7 @@ export function Home() {
           Ecosystem team at Atlassian.
         </Content>
       </Section>
+      <SectionDivider />
       <Section>
         <Heading>External Links</Heading>
         <LinkStyle tw="underline"><a target="_blank" href="https://github.com/ChrisPWill">Github</a></LinkStyle>
