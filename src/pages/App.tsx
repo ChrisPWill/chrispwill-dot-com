@@ -45,8 +45,12 @@ const OutletWrapper = tw.div`
 export function App() {
   return (
     <Container>
-      <TopBarWrapper><TopBar /></TopBarWrapper>
-      <OutletWrapper><Outlet /></OutletWrapper>
+      <TopBarWrapper>
+        <TopBar />
+      </TopBarWrapper>
+      <OutletWrapper>
+        <Outlet />
+      </OutletWrapper>
     </Container>
   );
 }

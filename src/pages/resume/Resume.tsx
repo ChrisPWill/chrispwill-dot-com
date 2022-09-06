@@ -1,5 +1,10 @@
 import * as React from "react";
-import { Content, Heading, Section, SectionDivider } from "../../components/text";
+import {
+  Content,
+  Heading,
+  Section,
+  SectionDivider,
+} from "../../components/text";
 
 export function Resume() {
   return (
