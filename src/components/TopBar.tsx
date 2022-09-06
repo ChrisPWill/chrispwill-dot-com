@@ -42,9 +42,7 @@ const Nav = tw.div`
   md:row-start-4
 `;
 
-const ImgPlaceholder = tw.div`
-  bg-red-400
-  hover:bg-red-300
+const ProfileImg = tw.img`
   rounded-full
   w-20
   h-20
@@ -58,7 +56,7 @@ const ImgPlaceholder = tw.div`
 export function TopBar() {
   return (
     <Container>
-      <ImgPlaceholder />
+      <ProfileImg src="https://s3.us-west-2.amazonaws.com/media.chrispwill.com/profile.jpg" />
       <Title>
         <Link to="/">Chris Williams</Link>
       </Title>
