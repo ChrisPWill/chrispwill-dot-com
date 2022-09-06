@@ -6,7 +6,7 @@ import {
   SectionDivider,
 } from "../../components/text";
 
-export function Resume(): React.FC {
+export const Resume: React.FC = () => {
   return (
     <>
       <Section>
@@ -38,4 +38,4 @@ export function Resume(): React.FC {
       </Section>
     </>
   );
-}
+};

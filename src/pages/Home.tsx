@@ -3,7 +3,7 @@ import * as React from "react";
 import { Link as LinkStyle } from "../components/link-styles";
 import { Content, Heading, Section, SectionDivider } from "../components/text";
 
-export function Home(): React.FC {
+export const Home: React.FC = () => {
   return (
     <>
       <Section>
@@ -38,4 +38,4 @@ export function Home(): React.FC {
       </Section>
     </>
   );
-}
+};
