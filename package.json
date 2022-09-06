@@ -11,7 +11,8 @@
     "lint:fix": "eslint --fix",
     "prettier": "prettier --write src",
     "start": "parcel",
-    "start:watch": "watch \"yarn start\" src"
+    "start:watch": "watch \"yarn start\" src",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "@babel/core": "^7.18.13",
@@ -25,6 +26,8 @@
     "eslint-plugin-n": "^15.0.0",
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-react": "^7.31.1",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
     "os-browserify": "^0.3.0",
     "parcel": "^2.7.0",
     "path-browserify": "^1.0.1",
@@ -47,5 +50,9 @@
     "twin": {
       "preset": "styled-components"
     }
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix",
+    "*.{js,css,md}": "prettier --write"
   }
 }
