@@ -42,7 +42,7 @@ const OutletWrapper = tw.div`
   place-self-start
 `;
 
-export function App() {
+export function App(): React.FC {
   return (
     <Container>
       <TopBarWrapper>

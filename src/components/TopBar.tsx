@@ -53,7 +53,7 @@ const ProfileImg = tw.img`
   md:row-start-1
 `;
 
-export function TopBar() {
+export function TopBar(): React.FC {
   return (
     <Container>
       <ProfileImg src="https://media.chrispwill.com/profile.jpg" />

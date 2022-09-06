@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "skipLibCheck": true,
+    "experimentalDecorators": true,
+    "jsxImportSource": "preact",
+    "jsx": "react",
+    "isolatedModules": true,
+    "strict": true
+  }
+}
