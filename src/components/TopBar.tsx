@@ -60,7 +60,7 @@ export function TopBar() {
       <Title>
         <Link to="/">Chris Williams</Link>
       </Title>
-      <SubTitle>Full Stack Developer</SubTitle>
+      <SubTitle>Software Developer @ Atlassian</SubTitle>
       <Nav>
         <Link to="/">
           <LinkStyle>Home</LinkStyle>
