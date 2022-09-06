@@ -1,8 +1,8 @@
 {
   "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
     "skipLibCheck": true,
     "experimentalDecorators": true,
-    "jsxImportSource": "react",
     "jsx": "react",
     "isolatedModules": true,
     "strict": true

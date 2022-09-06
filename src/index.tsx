@@ -1,12 +1,12 @@
 import * as React from "react";
-import ReactDOM from "react-dom";
+import * as ReactDOM from "react-dom/client";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import { App } from "./pages/App";
 import { Resume } from "./pages/resume/Resume";
 import { Home } from "./pages/Home";
 
-const rootElement = document.getElementById("app");
+const rootElement = document.getElementById("app") as HTMLElement;
 const root = ReactDOM.createRoot(rootElement);
 
 root.render(
