@@ -56,7 +56,7 @@ const ProfileImg = tw.img`
 export function TopBar() {
   return (
     <Container>
-      <ProfileImg src="https://s3.us-west-2.amazonaws.com/media.chrispwill.com/profile.jpg" />
+      <ProfileImg src="https://media.chrispwill.com/profile.jpg" />
       <Title>
         <Link to="/">Chris Williams</Link>
       </Title>

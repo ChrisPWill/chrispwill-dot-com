@@ -19,15 +19,15 @@ export function Resume() {
       </Section>
       <SectionDivider />
       <Section>
-        <Heading>Experience</Heading>
-      </Section>
-      <SectionDivider />
-      <Section>
         <Heading>Certifications</Heading>
-      </Section>
-      <SectionDivider />
-      <Section>
-        <Heading>Education</Heading>
+        <Content>
+          <a
+            target="_blank"
+            href="https://www.credly.com/badges/1dd7d7f7-f7aa-4999-b9e2-e8e4d3186ce8/public_url"
+          >
+            <img src="https://media.chrispwill.com/aws-certified-solutions-architect-associate.png" />
+          </a>
+        </Content>
       </Section>
     </>
   );
