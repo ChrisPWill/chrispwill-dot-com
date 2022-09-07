@@ -96,6 +96,49 @@ export const Resume: React.FC = () => {
         </Content>
       </Section>
       <Section>
+        <Heading>Education</Heading>
+        <Content>
+          <div>
+            <ExperienceTitle>University of New South Wales</ExperienceTitle>
+            <div>
+              <ExperienceByline>2020-2015</ExperienceByline>
+              <ExperienceDetail>
+                Bachelor&apos;s Degree, Mechanical Engineering
+              </ExperienceDetail>
+              <ExperienceByline>Performance</ExperienceByline>
+              <ExperienceDetail>Class 1 Honours</ExperienceDetail>
+              <ExperienceByline>Activities and Societies</ExperienceByline>
+              <ExperienceDetail>
+                UNSW Kendo Club, UNSW Mechatronics Society
+              </ExperienceDetail>
+              <ExperienceByline>Skills</ExperienceByline>
+              <ExperienceDetail>
+                <ExperienceSkill>C++</ExperienceSkill>
+                <ExperienceSkill>Matlab</ExperienceSkill>
+                <ExperienceSkill>CAD</ExperienceSkill>
+                <ExperienceSkill>3D Modelling</ExperienceSkill>
+              </ExperienceDetail>
+            </div>
+          </div>
+          <div>
+            <ExperienceTitle>Other Education</ExperienceTitle>
+            <div>
+              <ExperienceByline>2019</ExperienceByline>
+              <ExperienceDetail>
+                KCP International Language School
+              </ExperienceDetail>
+              <ExperienceByline>Location</ExperienceByline>
+              <ExperienceDetail>Shinjuku, Tokyo - Japan</ExperienceDetail>
+              <ExperienceByline>Description</ExperienceByline>
+              <ExperienceDetail>
+                An intensive Japanese language school located in the heart of
+                Tokyo.
+              </ExperienceDetail>
+            </div>
+          </div>
+        </Content>
+      </Section>
+      <Section>
         <Heading>Certifications</Heading>
         <a
           target="_blank"

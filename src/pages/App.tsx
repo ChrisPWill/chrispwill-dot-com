@@ -6,14 +6,16 @@ import { TopBar } from "../components/TopBar";
 
 const Container = tw.div`
   md:container
-  md:mx-auto
+  md:mx-10
+  md:my-10
+  md:shadow-2xl
   grid
   grid-flow-row
   items-center
 `;
 
 const TopBarWrapper = tw.div`
-  md:h-screen
+  md:h-full
   col-span-full
   md:col-start-1
   md:col-span-1
@@ -29,7 +31,7 @@ const TopBarWrapper = tw.div`
 
 const OutletWrapper = tw.div`
   ml-0
-  md:h-screen
+  md:h-full
   px-3
   py-4
   md:py-8
