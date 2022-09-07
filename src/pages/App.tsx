@@ -1,10 +1,17 @@
 import * as React from "react";
 import { Outlet } from "react-router-dom";
+import styled from "styled-components";
 import tw from "twin.macro";
 
 import { TopBar } from "../components/TopBar";
 
-const Container = tw.div`
+const MinHeight = styled.div`
+  @media (min-width: 768px) {
+    min-height: 90vh;
+  }
+`;
+
+const Container = tw(MinHeight)`
   md:container
   md:mx-10
   md:my-10
