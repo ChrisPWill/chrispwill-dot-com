@@ -93,10 +93,6 @@ export const Resume: React.FC = () => {
               </ExperienceDetail>
             </div>
           </div>
-          <div>
-            <ExperienceTitle>Escrow.com</ExperienceTitle>
-            <div></div>
-          </div>
         </Content>
       </Section>
       <Section>
