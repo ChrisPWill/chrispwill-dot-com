@@ -5,6 +5,10 @@ import tw from "twin.macro";
 
 import { TopBar } from "../components/TopBar";
 
+const GlobalStyles = styled.div`
+  font-family: "Roboto", sans-serif;
+`;
+
 const MinHeight = styled.div`
   @media (min-width: 768px) {
     min-height: 90vh;
@@ -53,13 +57,15 @@ const OutletWrapper = tw.div`
 
 export const App: React.FC = () => {
   return (
-    <Container>
-      <TopBarWrapper>
-        <TopBar />
-      </TopBarWrapper>
-      <OutletWrapper>
-        <Outlet />
-      </OutletWrapper>
-    </Container>
+    <GlobalStyles>
+      <Container>
+        <TopBarWrapper>
+          <TopBar />
+        </TopBarWrapper>
+        <OutletWrapper>
+          <Outlet />
+        </OutletWrapper>
+      </Container>
+    </GlobalStyles>
   );
 };
