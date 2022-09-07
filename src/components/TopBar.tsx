@@ -53,6 +53,10 @@ const ProfileImg = tw.img`
   md:row-start-1
 `;
 
+const TopBarLink = tw(LinkStyle)`
+  block
+`;
+
 export const TopBar: React.FC = () => {
   return (
     <Container>
@@ -63,10 +67,10 @@ export const TopBar: React.FC = () => {
       <SubTitle>Software Developer @ Atlassian</SubTitle>
       <Nav>
         <Link to="/">
-          <LinkStyle>Home</LinkStyle>
+          <TopBarLink>Home</TopBarLink>
         </Link>
         <Link to="resume">
-          <LinkStyle>Resume</LinkStyle>
+          <TopBarLink>Resume</TopBarLink>
         </Link>
       </Nav>
     </Container>

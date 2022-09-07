@@ -1,7 +1,8 @@
 import * as React from "react";
 
-import { Link as LinkStyle } from "../components/link-styles";
+import { LinkUnderlined as LinkStyle } from "../components/link-styles";
 import { Content, Heading, Section, SectionDivider } from "../components/text";
+import { Link } from "react-router-dom";
 
 export const Home: React.FC = () => {
   return (
@@ -16,25 +17,40 @@ export const Home: React.FC = () => {
       </Section>
       <SectionDivider />
       <Section>
+        <Heading>Professional Info</Heading>
+        <Content>
+          Check out my{" "}
+          <LinkStyle>
+            <Link to="/resume">resume</Link>
+          </LinkStyle>
+          !
+        </Content>
+      </Section>
+      <SectionDivider />
+      <Section>
         <Heading>External Links</Heading>
-        <LinkStyle tw="underline">
-          <a
-            target="_blank"
-            href="https://github.com/ChrisPWill"
-            rel="noreferrer"
-          >
-            Github
-          </a>
-        </LinkStyle>
-        <LinkStyle tw="underline">
-          <a
-            target="_blank"
-            href="https://www.linkedin.com/in/chrispwill"
-            rel="noreferrer"
-          >
-            LinkedIn
-          </a>
-        </LinkStyle>
+        <div>
+          <LinkStyle>
+            <a
+              target="_blank"
+              href="https://github.com/ChrisPWill"
+              rel="noreferrer"
+            >
+              Github
+            </a>
+          </LinkStyle>
+        </div>
+        <div>
+          <LinkStyle>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/chrispwill"
+              rel="noreferrer"
+            >
+              LinkedIn
+            </a>
+          </LinkStyle>
+        </div>
       </Section>
     </>
   );
