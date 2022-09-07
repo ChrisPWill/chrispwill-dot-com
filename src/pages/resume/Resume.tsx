@@ -124,7 +124,7 @@ export const Resume: React.FC = () => {
           <div>
             <ExperienceTitle>University of New South Wales</ExperienceTitle>
             <div>
-              <ExperienceBylineUnderline>2020-2015</ExperienceBylineUnderline>
+              <ExperienceBylineUnderline>2010-2015</ExperienceBylineUnderline>
               <ExperienceDetail>
                 Bachelor&apos;s Degree, Mechanical Engineering
               </ExperienceDetail>
