@@ -1,36 +1,17 @@
 import * as React from "react";
+
 import {
   Content,
   Heading,
   Section,
   SectionDivider,
 } from "../../components/text";
-import tw from "twin.macro";
-
-const Certification = tw.span`
-  flex
-  rounded-lg
-  bg-gray-50
-  shadow-md
-`;
-
-const CertificationImage = tw.img`
-  my-auto
-  w-28
-  h-28
-`;
-
-const CertificationInfo = tw.div`
-  my-auto
-  mx-2
-`;
-
-const CertificationTitle = tw.div`
-  font-semibold
-`;
-
-const CertificationDescription = tw.div`
-`;
+import {
+  Certification,
+  CertificationImage,
+  CertificationInfo,
+  CertificationTitle,
+} from "./certification";
 
 export const Resume: React.FC = () => {
   return (
@@ -51,6 +32,10 @@ export const Resume: React.FC = () => {
       </Section>
       <SectionDivider />
       <Section>
+        <Heading>Work Experience</Heading>
+        <Content></Content>
+      </Section>
+      <Section>
         <Heading>Certifications</Heading>
         <a
           target="_blank"
@@ -63,9 +48,7 @@ export const Resume: React.FC = () => {
               <CertificationTitle>
                 AWS Solutions Architect - Associate
               </CertificationTitle>
-              <CertificationDescription>
-                Achieved on August 20, 2022
-              </CertificationDescription>
+              Achieved on August 20, 2022
             </CertificationInfo>
           </Certification>
         </a>
