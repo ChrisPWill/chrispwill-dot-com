@@ -55,6 +55,9 @@ const ProfileImg = tw.img`
 
 const TopBarLink = tw(LinkStyle)`
   block
+  mx-1
+  underline
+  md:no-underline
 `;
 
 export const TopBar: React.FC = () => {
