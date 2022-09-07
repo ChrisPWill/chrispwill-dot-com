@@ -81,7 +81,11 @@ export const Resume: React.FC = () => {
                 <div className="mb-2">
                   I led the development of the{" "}
                   <LinkUnderlined>
-                    <a target="_blank" href="https://www.escrow.com/api" rel="noreferrer">
+                    <a
+                      target="_blank"
+                      href="https://www.escrow.com/api"
+                      rel="noreferrer"
+                    >
                       Escrow Platform Api
                     </a>{" "}
                   </LinkUnderlined>{" "}
