@@ -14,10 +14,12 @@ import {
 } from "./certification";
 import {
   ExperienceByline,
+  ExperienceBylineUnderline,
   ExperienceDetail,
   ExperienceSkill,
   ExperienceTitle,
 } from "./experience";
+import { LinkUnderlined } from "../../components/link-styles";
 
 export const Resume: React.FC = () => {
   return (
@@ -43,7 +45,7 @@ export const Resume: React.FC = () => {
           <div>
             <ExperienceTitle>Atlassian</ExperienceTitle>
             <div>
-              <ExperienceByline>Apr 2020</ExperienceByline>
+              <ExperienceBylineUnderline>Apr 2020</ExperienceBylineUnderline>
               <ExperienceDetail>Software Engineer</ExperienceDetail>
               <ExperienceByline>Description</ExperienceByline>
               <ExperienceDetail>
@@ -54,6 +56,7 @@ export const Resume: React.FC = () => {
               <ExperienceByline>Skills</ExperienceByline>
               <ExperienceDetail>
                 <ExperienceSkill>AWS</ExperienceSkill>
+                <ExperienceSkill>PostgreSQL</ExperienceSkill>
                 <ExperienceSkill>Typescript</ExperienceSkill>
                 <ExperienceSkill>ReactJS</ExperienceSkill>
                 <ExperienceSkill>GraphQL</ExperienceSkill>
@@ -66,16 +69,32 @@ export const Resume: React.FC = () => {
           <div>
             <ExperienceTitle>Escrow.com</ExperienceTitle>
             <div>
-              <ExperienceByline>Jun 2017</ExperienceByline>
+              <ExperienceBylineUnderline>Jun 2017</ExperienceBylineUnderline>
               <ExperienceDetail>Engineering Team Lead</ExperienceDetail>
               <ExperienceByline>Description</ExperienceByline>
               <ExperienceDetail>
-                I lead a team of engineers working on constant improvements to
-                the site and its backend services. I led the development of the
-                Escrow Platform API, the biggest new development in the business
-                in almost two decades.
+                I led a team of engineers working on constant improvements to
+                the site and its backend services.
               </ExperienceDetail>
-              <ExperienceByline>Mar 2016</ExperienceByline>
+              <ExperienceByline>Notable work</ExperienceByline>
+              <ExperienceDetail>
+                <div className="mb-2">
+                  I led the development of the{" "}
+                  <LinkUnderlined>
+                    <a target="_blank" href="https://www.escrow.com/api" rel="noreferrer">
+                      Escrow Platform Api
+                    </a>{" "}
+                  </LinkUnderlined>{" "}
+                  - the biggest new development in the business enabling simpler
+                  integration between other platforms and products.
+                </div>
+                <div>
+                  I also led the migration of the Microsoft SQL Server database
+                  to support Unicode, an involved process which involved
+                  scripts, safeguards and detailed change management.
+                </div>
+              </ExperienceDetail>
+              <ExperienceBylineUnderline>Mar 2016</ExperienceBylineUnderline>
               <ExperienceDetail>Software Engineer</ExperienceDetail>
               <ExperienceByline>Description</ExperienceByline>
               <ExperienceDetail>
@@ -101,7 +120,7 @@ export const Resume: React.FC = () => {
           <div>
             <ExperienceTitle>University of New South Wales</ExperienceTitle>
             <div>
-              <ExperienceByline>2020-2015</ExperienceByline>
+              <ExperienceBylineUnderline>2020-2015</ExperienceBylineUnderline>
               <ExperienceDetail>
                 Bachelor&apos;s Degree, Mechanical Engineering
               </ExperienceDetail>
@@ -123,7 +142,7 @@ export const Resume: React.FC = () => {
           <div>
             <ExperienceTitle>Other Education</ExperienceTitle>
             <div>
-              <ExperienceByline>2019</ExperienceByline>
+              <ExperienceBylineUnderline>2019</ExperienceBylineUnderline>
               <ExperienceDetail>
                 KCP International Language School
               </ExperienceDetail>

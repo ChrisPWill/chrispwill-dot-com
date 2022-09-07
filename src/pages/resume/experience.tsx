@@ -15,6 +15,10 @@ export const ExperienceByline = tw.div`
   md:align-top
 `;
 
+export const ExperienceBylineUnderline = tw(ExperienceByline)`
+  underline
+`;
+
 export const ExperienceDetail = tw.div`
   my-1
   md:inline-block
