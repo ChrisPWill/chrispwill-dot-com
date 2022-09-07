@@ -34,4 +34,4 @@ jobs:
       - name: Build
         run: yarn build
       - name: Deploy
-        run: aws s3 sync ./dist s3://www.chrispwill.com
+        run: aws s3 sync ./dist s3://chrispwill.com
