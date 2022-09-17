@@ -1,18 +1,18 @@
 {
   "name": "chrispwill-dot-com",
   "version": "1.0.0",
-  "source": "src/index.html",
+  "source": "frontend/index.html",
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
     "build": "parcel build",
     "build:check": "tsc --noEmit && yarn lint && yarn prettier:check",
     "cleanup": "rimraf .parcel-cache dist",
-    "lint": "eslint src",
-    "lint:fix": "eslint --fix src",
-    "prettier": "prettier --write src",
-    "prettier:check": "prettier --check src",
+    "lint": "eslint frontend",
+    "lint:fix": "eslint --fix frontend",
+    "prettier": "prettier --write frontend",
+    "prettier:check": "prettier --check frontend",
     "start": "parcel",
-    "start:watch": "watch \"yarn start\" src",
+    "start:watch": "watch \\\"yarn start\\\" frontend",
     "prepare": "husky install"
   },
   "devDependencies": {
@@ -58,7 +58,7 @@
     }
   },
   "lint-staged": {
-    "src/**/*.{js,jsx,ts,tsx}": "eslint --cache --fix",
-    "src/**/*": "prettier --write"
+    "frontend/**/*.{js,jsx,ts,tsx}": "eslint --cache --fix",
+    "frontend/**/*": "prettier --write"
   }
 }
